@@ -102,6 +102,7 @@ RSpec.describe 'api/authors', type: :request do
       parameter name: :id, in: :path, type: :string
       response 204, 'No content' do
         let(:id) { create_author.id }
+        create_author # just to have a replacement for Random finder
         run_test!
       end
 
