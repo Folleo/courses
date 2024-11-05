@@ -2,7 +2,7 @@
 # development, test). The code here should be idempotent so that it can be executed at any point in every environment.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 
-MAX_OBJECTS_NUMBER = 10
+MAX_OBJECTS_NUMBER = 10000
 
 topics = []
 MAX_OBJECTS_NUMBER.times do
